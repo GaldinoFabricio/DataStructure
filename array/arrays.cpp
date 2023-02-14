@@ -73,16 +73,12 @@ void pop(int size, int items[]) {
 	}
 }
 
-int deleteItem(int item[], int index,int size = 0) {
-	int  newIndex = 0;
-	for (int i = 0; i < size; i++) {
-		if (i < index || i > index) {
-			item[newIndex] = item[i];
-			newIndex++;
-		}
+int* deleteItem(int item[], int index,int size = 0) {
+	for (int i = index; i < size; i++) {
+		item[i - 1] = item[i];
 	}
 
-	return newIndex;
+	return item;
 }
 
 int removeItem(int item[], int size, int search) {

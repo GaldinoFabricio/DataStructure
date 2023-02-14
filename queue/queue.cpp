@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-/*struct queue {
+struct queue {
 	int size = -1, first = -1, item[];
 }queue;
 
@@ -69,4 +69,4 @@ int main() {
 			break;
 		}
 	}
-}*/
+}
